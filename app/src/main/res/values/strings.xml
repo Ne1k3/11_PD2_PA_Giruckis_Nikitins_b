@@ -27,4 +27,9 @@
     <string name="Product_MainPage_Button_Text">uz sākuma logu</string>
     <string name="Product_FilterFind_Button_Text">Filtri</string>
     <string name="Product_Find_Button_Text">OK</string>
+
+    <string name="List_Text">Saraksts</string>
+    <string name="List_SummaButton_Text">Kopeja cena</string>
+    <string name="List_DeleteProduct_Button_Text">Dzēst Produktu</string>
+    <string name="List_MainPage_Button_Text">Uz sākuma logu</string>
 </resources>
