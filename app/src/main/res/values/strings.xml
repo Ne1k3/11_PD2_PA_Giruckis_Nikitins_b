@@ -6,7 +6,6 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="lorem_ipsum"></string>
 
     <string name="Login_Text">Shoping List app</string>
     <string name="Login_UsernameText">Lietotājvards:</string>
@@ -14,5 +13,4 @@
     <string name="Login_SignInText">Ielagoties</string>
     <string name="Login_RegistrationText">Reģistreties</string>
     <string name="Login_UsernameInputText">Jusu Lietotājvards</string>
-
 </resources>
