@@ -104,7 +104,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="44dp"
         android:background="#C82727"
-        android:text="OK"
+        android:text="Ok"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@+id/main_page_text"
         tools:layout_editor_absoluteX="342dp" />
