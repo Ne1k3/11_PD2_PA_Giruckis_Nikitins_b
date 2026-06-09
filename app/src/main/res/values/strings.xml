@@ -13,4 +13,18 @@
     <string name="Login_SignInText">Ielagoties</string>
     <string name="Login_RegistrationText">Reģistreties</string>
     <string name="Login_UsernameInputText">Jusu Lietotājvards</string>
+
+
+    <string name="Product_Text">Produkti</string>
+    <string name="Product_Find_Text">Meklet:</string>
+    <string name="Product_FilterFind_Text">Meklet Pec Filtriem:</string>
+    <string name="ProductViewText1">Produkt 1</string>
+    <string name="ProductViewText2">Produkt 2</string>
+    <string name="ProductViewText3">Produkt 3</string>
+    <string name="ProductViewText4">Produkt 4</string>
+    <string name="ProductViewText5">Produkt 5</string>
+    <string name="ProductViewText6">Produkt 6</string>
+    <string name="Product_MainPage_Button_Text">uz sākuma logu</string>
+    <string name="Product_FilterFind_Button_Text">Filtri</string>
+    <string name="Product_Find_Button_Text">OK</string>
 </resources>
