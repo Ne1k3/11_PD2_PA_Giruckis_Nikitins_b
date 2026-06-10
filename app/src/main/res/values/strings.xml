@@ -48,4 +48,16 @@
     <string name="Registration_Password_2">Parole(atkartoti)</string>
     <string name="Registration_Reg_Button_Text">Reģestreties</string>
     <string name="Registration_SignIn_Button_Text">Ielagoties</string>
+
+    <string name="main_page_button1">Saraksts</string>
+    <string name="main_page_button2">Saraksts</string>
+    <string name="main_page_button3">Saraksts</string>
+    <string name="main_page_button4">Saraksts</string>
+    <string name="main_page_button5">Izveidot jaunu sarakstu</string>
+    <string name="main_page_button6">Ok</string>
+    <string name="main_page_text">Sakuma lapa</string>
+    <string name="main_page_text2">Meklet sarakstu</string>
+    <string name="main_page_search">0</string>
+
+
 </resources>
