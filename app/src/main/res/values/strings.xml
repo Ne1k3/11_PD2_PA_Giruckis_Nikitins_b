@@ -38,4 +38,14 @@
     <string name="AdminLog_DeleteFind_Text">Meklet/Dzēst kontu</string>
     <string name="AdminLog_Find_Button_Text">Meklet</string>
     <string name="AdminLog_Delete_Button_Text">Dzēst</string>
+
+    <string name="Registration_Text">Reģestretracija</string>
+    <string name="Registration_Name">Vards</string>
+    <string name="Registration_Surname">Uzvards</string>
+    <string name="Registration_Username">Lietotajvards</string>
+    <string name="Registration_Email">epasts</string>
+    <string name="Registration_Password">Parole</string>
+    <string name="Registration_Password_2">Parole(atkartoti)</string>
+    <string name="Registration_Reg_Button_Text">Reģestreties</string>
+    <string name="Registration_SignIn_Button_Text">Ielagoties</string>
 </resources>
