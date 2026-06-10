@@ -2,8 +2,11 @@
     <string name="app_name">11_PD2_PA_Giruckis_Nikitins_2026</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="Registration_fragment_label">Registracija</string>
+    <string name="MainPage_fragment_label">SakumaLogs</string>
+    <string name="Login_fragment_label">Ielagošana</string>
+    <string name="ProductList_fragment_label">Saraksti</string>
+    <string name="Product_fragment_label">Produkti</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 

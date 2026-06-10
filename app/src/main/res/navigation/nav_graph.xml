@@ -3,26 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/RegistrationFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/RegistrationFragment"
         android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.FirstFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/Registration_fragment_label"
         tools:layout="@layout/registration">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_RegistrationFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_RegistrationFragment_to_MainPageFragment"
+            app:destination="@id/MainPageFragment" />
     </fragment>
+
+
+
+
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/MainPageFragment"
         android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:label="@string/MainPage_fragment_label"
+        tools:layout="@layout/main_page">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_MainPageFragment_to_ProductListFragment"
+            app:destination="@id/ProductListFragment" />
+        <action
+            android:id="@+id/action_MainPageFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment" />
     </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.SecondFragment"
+        android:label="@string/Login_fragment_label"
+        tools:layout="@layout/login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_FirstFragment"
+            app:destination="@id/RegistrationFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_MainPageFragment"
+            app:destination="@id/MainPageFragment" />
+    </fragment>
+
+
+
+
+
+    <fragment
+        android:id="@+id/ProductListFragment"
+        android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.SecondFragment"
+        android:label="@string/ProductList_fragment_label"
+        tools:layout="@layout/product_list">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/ProductFragment"
+        android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.SecondFragment"
+        android:label="@string/Product_fragment_label"
+        tools:layout="@layout/products">
+
+
+    </fragment>
+
+
 </navigation>
