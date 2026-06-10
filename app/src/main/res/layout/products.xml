@@ -10,8 +10,9 @@
         android:layout_width="116dp"
         android:layout_height="117dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="215dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -32,8 +33,12 @@
         android:layout_height="wrap_content"
         android:text="@string/Product_Text"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 
     <EditText
         android:id="@+id/Product_Find_Input"
@@ -105,18 +110,20 @@
         android:id="@+id/ProductView3"
         android:layout_width="126dp"
         android:layout_height="116dp"
+        android:layout_marginTop="216dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="215dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/ProductView4"
         android:layout_width="120dp"
         android:layout_height="115dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="84dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="415dp"
+        app:layout_constraintTop_toBottomOf="@+id/ProductView1"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
@@ -125,19 +132,23 @@
         android:layout_height="116dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/ProductViewText5"
         app:layout_constraintEnd_toStartOf="@+id/ProductView6"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ProductView4"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Find_Input"
+        app:layout_constraintVertical_bias="0.996"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/ProductView6"
         android:layout_width="122dp"
         android:layout_height="118dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="415dp"
+        app:layout_constraintTop_toBottomOf="@+id/ProductView3"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -145,10 +156,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
         android:text="@string/ProductViewText1"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="354dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ProductView1" />
 
     <TextView
         android:id="@+id/ProductViewText2"
@@ -167,43 +179,47 @@
         android:id="@+id/ProductViewText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
         android:text="@string/ProductViewText3"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="354dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ProductView3" />
 
     <TextView
         android:id="@+id/ProductViewText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:text="@string/ProductViewText4"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="559dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ProductView4" />
 
     <TextView
         android:id="@+id/ProductViewText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="436dp"
         android:layout_marginEnd="16dp"
         android:text="@string/ProductViewText5"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/ProductViewText6"
         app:layout_constraintStart_toEndOf="@+id/ProductViewText4"
-        tools:layout_editor_absoluteY="559dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Product_Find_Input" />
 
     <TextView
         android:id="@+id/ProductViewText6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
         android:text="@string/ProductViewText6"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="559dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ProductView6" />
 
     <Button
         android:id="@+id/Product_MainPage_Button"
