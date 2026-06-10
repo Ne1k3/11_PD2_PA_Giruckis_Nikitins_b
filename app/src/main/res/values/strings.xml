@@ -32,4 +32,10 @@
     <string name="List_SummaButton_Text">Kopeja cena</string>
     <string name="List_DeleteProduct_Button_Text">Dzēst Produktu</string>
     <string name="List_MainPage_Button_Text">Uz sākuma logu</string>
+
+    <string name="AdminLog_Text">Administratora logs</string>
+    <string name="AdminLog_Tab_Text">Lietotaji</string>
+    <string name="AdminLog_DeleteFind_Text">Meklet/Dzēst kontu</string>
+    <string name="AdminLog_Find_Button_Text">Meklet</string>
+    <string name="AdminLog_Delete_Button_Text">Dzēst</string>
 </resources>
