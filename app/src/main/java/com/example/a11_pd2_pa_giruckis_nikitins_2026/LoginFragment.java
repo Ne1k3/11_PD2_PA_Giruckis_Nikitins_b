@@ -31,11 +31,18 @@ public class LoginFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button SingInButton = view.findViewById(R.id.Registration_SignIn_Button);
+        Button RegistrationButton = view.findViewById(R.id.Login_Registration);
 
-        SingInButton.setOnClickListener(v ->
+        RegistrationButton.setOnClickListener(v ->
                 NavHostFragment.findNavController(LoginFragment.this)
-                        .navigate(R.id.action_RegistrationFragment_to_LoginFragment)
+                        .navigate(R.id.action_LoginFragment_to_FirstFragment)
+        );
+
+        Button LogInButton = view.findViewById(R.id.Login_SignIn);
+
+        LogInButton.setOnClickListener(v ->
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_LoginFragment_to_MainPageFragment)
         );
     }
 

@@ -31,17 +31,39 @@ public class MainPageFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button ProductButton = view.findViewById(R.id.action_RegistrationFragment_to_LoginFragment);
+        Button ProductButton = view.findViewById(R.id.main_page_newList_button);
 
         ProductButton.setOnClickListener(v ->
                 NavHostFragment.findNavController(MainPageFragment.this)
-                        .navigate(R.id.action_RegistrationFragment_to_LoginFragment)
+                        .navigate(R.id.action_MainPageFragment_to_ProductFragment)
         );
-        Button SingInButton = view.findViewById(R.id.Registration_SignIn_Button);
 
-        SingInButton.setOnClickListener(v ->
+        Button PoductList1Button = view.findViewById(R.id.main_page_list1);
+
+        PoductList1Button.setOnClickListener(v ->
                 NavHostFragment.findNavController(MainPageFragment.this)
-                        .navigate(R.id.action_RegistrationFragment_to_LoginFragment)
+                        .navigate(R.id.action_MainPageFragment_to_ProductListFragment)
+        );
+
+        Button PoductList2Button = view.findViewById(R.id.main_page_list2);
+
+        PoductList2Button.setOnClickListener(v ->
+                NavHostFragment.findNavController(MainPageFragment.this)
+                        .navigate(R.id.action_MainPageFragment_to_ProductListFragment)
+        );
+
+        Button PoductList3Button = view.findViewById(R.id.main_page_list3);
+
+        PoductList3Button.setOnClickListener(v ->
+                NavHostFragment.findNavController(MainPageFragment.this)
+                        .navigate(R.id.action_MainPageFragment_to_ProductListFragment)
+        );
+
+        Button PoductList4Button = view.findViewById(R.id.main_page_list4);
+
+        PoductList4Button.setOnClickListener(v ->
+                NavHostFragment.findNavController(MainPageFragment.this)
+                        .navigate(R.id.action_MainPageFragment_to_ProductListFragment)
         );
     }
 
