@@ -4,16 +4,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.a11_pd2_pa_giruckis_nikitins_2026.databinding.FragmentSecondBinding;
+import com.example.a11_pd2_pa_giruckis_nikitins_2026.databinding.ContentMainBinding;
 
-public class SecondFragment extends Fragment {
 
-    private FragmentSecondBinding binding;
+public class LoginFragment extends Fragment {
+
+    private ContentMainBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +23,7 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = ContentMainBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -29,9 +31,11 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(v ->
-                NavHostFragment.findNavController(SecondFragment.this)
-                        .navigate(R.id.action_SecondFragment_to_FirstFragment)
+        Button SingInButton = view.findViewById(R.id.Registration_SignIn_Button);
+
+        SingInButton.setOnClickListener(v ->
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_RegistrationFragment_to_LoginFragment)
         );
     }
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/RegistrationFragment"
-        android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.FirstFragment"
+        android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.RegistrationFragment"
         android:label="@string/Registration_fragment_label"
         tools:layout="@layout/registration">
 
@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/LoginFragment"
-        android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.SecondFragment"
+        android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.LoginFragment"
         android:label="@string/Login_fragment_label"
         tools:layout="@layout/login">
 
