@@ -159,6 +159,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/ProductViewText1"
         android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProductView1" />
 
@@ -171,6 +172,7 @@
         android:layout_marginBottom="40dp"
         android:text="@string/ProductViewText2"
         android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/ProductView5"
         app:layout_constraintEnd_toStartOf="@+id/ProductViewText3"
         app:layout_constraintStart_toEndOf="@+id/ProductViewText1" />
@@ -183,6 +185,7 @@
         android:layout_marginEnd="12dp"
         android:text="@string/ProductViewText3"
         android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProductView3" />
 
@@ -194,6 +197,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/ProductViewText4"
         android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProductView4" />
 
@@ -206,6 +210,7 @@
         android:layout_marginEnd="16dp"
         android:text="@string/ProductViewText5"
         android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toStartOf="@+id/ProductViewText6"
         app:layout_constraintStart_toEndOf="@+id/ProductViewText4"
         app:layout_constraintTop_toBottomOf="@+id/Product_Find_Input" />
@@ -218,6 +223,7 @@
         android:layout_marginEnd="12dp"
         android:text="@string/ProductViewText6"
         android:textSize="16sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProductView6" />
 
