@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAFAF5"
     tools:context=".RegistrationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -98,7 +99,7 @@
             android:layout_width="262dp"
             android:layout_height="65dp"
             android:layout_marginTop="484dp"
-            android:backgroundTint="#2A9526"
+            android:backgroundTint="#D97706"
             android:text="@string/Registration_Reg_Button_Text"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +113,7 @@
             android:layout_width="254dp"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
-            android:backgroundTint="#2A9526"
+            android:backgroundTint="#EFA441"
             android:text="@string/Registration_SignIn_Button_Text"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
