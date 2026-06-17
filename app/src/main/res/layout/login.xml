@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FAFAF5">
 
     <Button
         android:id="@+id/Login_Registration"
         android:layout_width="290dp"
         android:layout_height="67dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#EFA441"
         android:insetLeft="0dp"
         android:insetTop="4dp"
         android:insetBottom="4dp"
@@ -27,7 +28,7 @@
         android:layout_width="290dp"
         android:layout_height="68dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#D97706"
         android:foregroundTint="#D33939"
         android:text="@string/Login_SignInText"
         android:textSize="20sp"
@@ -45,7 +46,8 @@
         app:layout_constraintBottom_toTopOf="@+id/Login_SignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.728"
-        app:layout_constraintStart_toEndOf="@+id/Login_PasswordText" />
+        app:layout_constraintStart_toEndOf="@+id/Login_PasswordText"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/Login_PasswordText"
@@ -54,6 +56,7 @@
         android:layout_marginStart="36dp"
         android:text="@string/Login_PasswordText"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Login_UsernameText"
@@ -67,6 +70,7 @@
         android:layout_marginTop="216dp"
         android:text="@string/Login_UsernameText"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,6 +81,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="@string/Login_UsernameInputText"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/Login_PasswordInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.594"
@@ -89,7 +94,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Login_Text"
+        android:textAllCaps="true"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

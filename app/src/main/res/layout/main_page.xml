@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FAFAF5">
 
     <TextView
         android:id="@+id/main_page_text"
@@ -11,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/main_page_text"
+        android:textAllCaps="true"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +27,7 @@
         android:layout_marginEnd="8dp"
         android:text="@string/main_page_text2"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/main_page_search"
         app:layout_constraintTop_toBottomOf="@+id/main_page_text" />
 
@@ -47,9 +51,10 @@
         android:layout_height="59dp"
         android:layout_marginTop="140dp"
         android:layout_marginBottom="28dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#EFA441"
         android:text="@string/main_page_button1"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@id/main_page_list2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,9 +66,10 @@
         android:layout_width="273dp"
         android:layout_height="59dp"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#EFA441"
         android:text="@string/main_page_button2"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/main_page_list3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -73,9 +79,10 @@
         android:layout_width="273dp"
         android:layout_height="59dp"
         android:layout_marginBottom="40dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#EFA441"
         android:text="@string/main_page_button3"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/main_page_list4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -85,9 +92,10 @@
         android:layout_width="273dp"
         android:layout_height="59dp"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#EFA441"
         android:text="@string/main_page_button4"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_page_list3" />
@@ -97,7 +105,7 @@
         android:layout_width="323dp"
         android:layout_height="68dp"
         android:layout_marginTop="84dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#D97706"
         android:text="@string/main_page_button5"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -111,11 +119,14 @@
         android:layout_width="73dp"
         android:layout_height="40dp"
         android:layout_marginTop="44dp"
-        android:backgroundTint="#2A9526"
+        android:backgroundTint="#D97706"
         android:text="@string/main_page_button6"
         android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_page_list1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toEndOf="@+id/main_page_search"
         app:layout_constraintTop_toBottomOf="@+id/main_page_text"
+        app:layout_constraintVertical_bias="0.052"
         tools:ignore="TouchTargetSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
