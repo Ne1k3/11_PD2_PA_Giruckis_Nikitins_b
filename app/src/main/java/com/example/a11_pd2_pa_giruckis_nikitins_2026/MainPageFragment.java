@@ -11,11 +11,14 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.a11_pd2_pa_giruckis_nikitins_2026.databinding.ContentMainBinding;
+import com.example.a11_pd2_pa_giruckis_nikitins_2026.databinding.ProductListBinding;
+import com.example.a11_pd2_pa_giruckis_nikitins_2026.databinding.ProductsBinding;
 
 
 public class MainPageFragment extends Fragment {
 
-    private ContentMainBinding binding;
+    private ProductListBinding binding;
+
 
     @Override
     public View onCreateView(
@@ -23,10 +26,18 @@ public class MainPageFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = ContentMainBinding.inflate(inflater, container, false);
+        binding = ProductListBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
+
     }
+
+
+
+
+
+
+
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
