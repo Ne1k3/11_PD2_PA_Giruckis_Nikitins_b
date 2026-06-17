@@ -95,11 +95,12 @@
 
         <Button
             android:id="@+id/Registration_Reg_Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="262dp"
+            android:layout_height="65dp"
             android:layout_marginTop="484dp"
-            android:background="#9B3C3C"
+            android:backgroundTint="#2A9526"
             android:text="@string/Registration_Reg_Button_Text"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -108,11 +109,12 @@
 
         <Button
             android:id="@+id/Registration_SignIn_Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="254dp"
+            android:layout_height="60dp"
             android:layout_marginTop="16dp"
-            android:background="#A63A3A"
+            android:backgroundTint="#2A9526"
             android:text="@string/Registration_SignIn_Button_Text"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"

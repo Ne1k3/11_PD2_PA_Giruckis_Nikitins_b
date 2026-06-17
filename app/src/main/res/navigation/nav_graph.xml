@@ -43,7 +43,7 @@
         android:id="@+id/LoginFragment"
         android:name="com.example.a11_pd2_pa_giruckis_nikitins_2026.LoginFragment"
         android:label="@string/Login_fragment_label"
-        tools:layout="@layout/login">
+        tools:layout="@layout/activity_main">
 
         <action
             android:id="@+id/action_LoginFragment_to_FirstFragment"
