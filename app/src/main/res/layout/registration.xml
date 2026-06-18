@@ -32,90 +32,107 @@
             android:id="@+id/Registration_Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/Registration_Name"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextText"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Registration_Text" />
 
         <TextView
             android:id="@+id/Registration_Surname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/Registration_Surname"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextText2"
-            app:layout_constraintTop_toBottomOf="@+id/Registration_Text" />
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
         <TextView
             android:id="@+id/Registration_Username"
-            android:layout_width="151dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="8dp"
+            android:layout_width="131dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/Registration_Username"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextText3"
-            app:layout_constraintTop_toBottomOf="@+id/Registration_Surname" />
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
         <TextView
             android:id="@+id/Registration_Email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/Registration_Email"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
-            app:layout_constraintTop_toBottomOf="@+id/Registration_Username" />
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
         <TextView
             android:id="@+id/Registration_Password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/Registration_Password"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
-            app:layout_constraintTop_toBottomOf="@+id/Registration_Email" />
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
         <TextView
             android:id="@+id/Registration_Password_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/Registration_Password_2"
+            android:textAlignment="center"
             android:textSize="20sp"
-            app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
-            app:layout_constraintTop_toBottomOf="@+id/Registration_Password" />
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
         <Button
             android:id="@+id/Registration_Reg_Button"
-            android:layout_width="262dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="484dp"
+            android:layout_width="253dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             android:backgroundTint="#D97706"
             android:text="@string/Registration_Reg_Button_Text"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Registration_Text"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
             app:rippleColor="#7E2626" />
 
         <Button
             android:id="@+id/Registration_SignIn_Button"
-            android:layout_width="254dp"
-            android:layout_height="60dp"
+            android:layout_width="252dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
             android:backgroundTint="#EFA441"
             android:text="@string/Registration_SignIn_Button_Text"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,71 +140,83 @@
 
         <EditText
             android:id="@+id/editTextTextPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Registration_Password" />
 
         <EditText
             android:id="@+id/editTextTextPassword2"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Registration_Password_2" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Registration_Email" />
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Name"
+            android:text="@string/Vards_Registration"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Registration_Text" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Registration_Name" />
 
         <EditText
             android:id="@+id/editTextText2"
-            android:layout_width="wrap_content"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Name"
+            android:text="@string/Uzvards_Registration"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Registration_Surname" />
 
         <EditText
             android:id="@+id/editTextText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="8dp"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Name"
+            android:text="@string/Lietototajvards_Registration"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Registration_Username" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

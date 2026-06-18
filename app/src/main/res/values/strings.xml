@@ -63,4 +63,8 @@
     <string name="main_page_search">0</string>
 
     <string name="lorem_ipsum">Saraksts</string>
+
+    <string name="Vards_Registration">Jusu Vards</string>
+    <string name="Uzvards_Registration">Jusu Uzvards</string>
+    <string name="Lietototajvards_Registration">Jusu Lietotajvards</string>
 </resources>
