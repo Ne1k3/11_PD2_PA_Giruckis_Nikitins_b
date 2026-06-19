@@ -10,24 +10,27 @@
         android:id="@+id/admin_logs_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/AdminLog_Text"
         android:textAllCaps="true"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/adming_logs_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/AdminLog_Tab_Text"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/Lietotaju_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/admin_logs_text" />
@@ -36,74 +39,73 @@
         android:id="@+id/search_button"
         android:layout_width="124dp"
         android:layout_height="48dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#D97706"
         android:text="@string/AdminLog_Find_Button_Text"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/delete_button"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintEnd_toStartOf="@+id/admin_logs_search"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_logs_text"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_logs_search" />
 
     <Button
         android:id="@+id/delete_button"
         android:layout_width="123dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="#D97706"
         android:text="@string/AdminLog_Delete_Button_Text"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_logs_text"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/admin_logs_search"
+        app:layout_constraintTop_toBottomOf="@+id/admin_logs_search" />
 
     <EditText
         android:id="@+id/admin_logs_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_logs_text3"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_logs_text3" />
 
     <TextView
         android:id="@+id/admin_logs_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="252dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/AdminLog_DeleteFind_Text"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_logs_text" />
+        app:layout_constraintTop_toBottomOf="@+id/Lietotaju_view" />
 
     <ScrollView
         android:id="@+id/Lietotaju_view"
         android:layout_width="381dp"
         android:layout_height="158dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:outlineAmbientShadowColor="#1B1A1A"
         android:outlineSpotShadowColor="#DB3232"
-        app:layout_constraintBottom_toTopOf="@+id/admin_logs_text3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_logs_text"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/adming_logs_text2">
 
         <LinearLayout
             android:layout_width="match_parent"
