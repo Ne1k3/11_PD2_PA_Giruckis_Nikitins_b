@@ -12,5 +12,10 @@ public interface UserDao {
 
     @Query("SELECT * FROM users")
     List<User> getAllUsers();
-}
 
+    @Query("SELECT * FROM users WHERE username = :username AND password = :password LIMIT 1")
+    User login(String username, String password);
+
+    @Query("SELECT * FROM users WHERE username = :username LIMIT 1")
+    User findByUsername(String username);
+}

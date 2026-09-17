@@ -89,7 +89,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/Login_UsernameInputText"
+        android:hint="@string/Login_UsernameInputText"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
