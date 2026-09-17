@@ -41,6 +41,7 @@
     <string name="AdminLog_DeleteFind_Text">Meklet/Dzēst kontu</string>
     <string name="AdminLog_Find_Button_Text">Meklet</string>
     <string name="AdminLog_Delete_Button_Text">Dzēst</string>
+    <string name="AdminLog_Logout">Iziet</string>
 
     <string name="Registration_Text">Reģestretracija</string>
     <string name="Registration_Name">Vards</string>

@@ -42,6 +42,13 @@ public class LoginFragment extends Fragment {
                 return;
             }
 
+            // Check for admin login
+            if (username.equals("admin") && password.equals("admin")) {
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_LoginFragment_to_AdminLogFragment);
+                return;
+            }
+
             AppDatabase db = AppDatabase.getDatabase(getContext());
             new Thread(() -> {
                 User user = db.userDao().login(username, password);
