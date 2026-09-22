@@ -24,16 +24,32 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/Admin_BackButton"
+        app:layout_constraintBottom_toTopOf="@+id/Admin_AddProductButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Admin_Text" />
 
     <Button
+        android:id="@+id/Admin_AddProductButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D97706"
+        android:text="@string/AdminLog_AddProduct"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Admin_BackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/Admin_BackButton"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#D97706"
         android:text="@string/AdminLog_Logout"
         android:textSize="18sp"

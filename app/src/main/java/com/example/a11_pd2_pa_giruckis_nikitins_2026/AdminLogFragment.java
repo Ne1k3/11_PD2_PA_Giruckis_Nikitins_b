@@ -1,14 +1,20 @@
 package com.example.a11_pd2_pa_giruckis_nikitins_2026;
 
 import android.app.AlertDialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
@@ -22,6 +28,24 @@ public class AdminLogFragment extends Fragment {
 
     private AdminLogBinding binding;
     private List<User> userList = new ArrayList<>();
+
+    private Uri selectedImageUri = null;
+    private ImageView currentDialogImageView = null;
+
+    private final ActivityResultLauncher<String> selectImageLauncher =
+            registerForActivityResult(new ActivityResultContracts.GetContent(), uri -> {
+                if (uri != null) {
+                    selectedImageUri = uri;
+                    try {
+                        requireContext().getContentResolver().takePersistableUriPermission(
+                                uri, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                    } catch (Exception ignored) {
+                    }
+                    if (currentDialogImageView != null) {
+                        currentDialogImageView.setImageURI(uri);
+                    }
+                }
+            });
 
     @Override
     public View onCreateView(
@@ -40,6 +64,8 @@ public class AdminLogFragment extends Fragment {
                 NavHostFragment.findNavController(AdminLogFragment.this)
                         .navigate(R.id.action_AdminLogFragment_to_LoginFragment)
         );
+
+        binding.AdminAddProductButton.setOnClickListener(v -> showAddProductDialog());
 
         binding.AdminUserList.setOnItemClickListener((parent, view1, position, id) -> {
             if (position < userList.size()) {
@@ -112,6 +138,48 @@ public class AdminLogFragment extends Fragment {
                     Toast.makeText(getContext(), "User deleted", Toast.LENGTH_SHORT).show();
                     loadUsers();
                 });
+            }
+        }).start();
+    }
+
+    private void showAddProductDialog() {
+        if (getContext() == null) return;
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_add_product, null);
+        builder.setView(dialogView);
+
+        EditText editName = dialogView.findViewById(R.id.edit_product_name);
+        currentDialogImageView = dialogView.findViewById(R.id.image_product_preview);
+        Button btnSelectImage = dialogView.findViewById(R.id.btn_select_image);
+
+        selectedImageUri = null;
+
+        btnSelectImage.setOnClickListener(v -> selectImageLauncher.launch("image/*"));
+
+        builder.setTitle(R.string.AddProduct_Title);
+        builder.setPositiveButton(R.string.AddProduct_AddButton, (dialog, which) -> {
+            String productName = editName.getText().toString().trim();
+            if (productName.isEmpty()) {
+                Toast.makeText(getContext(), "Lūdzu ievadiet produkta nosaukumu", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            String imageUriStr = selectedImageUri != null ? selectedImageUri.toString() : "";
+            saveProduct(productName, imageUriStr);
+        });
+
+        builder.setNegativeButton(android.R.string.cancel, null);
+        builder.show();
+    }
+
+    private void saveProduct(String name, String imageUri) {
+        AppDatabase db = AppDatabase.getDatabase(getContext());
+        new Thread(() -> {
+            db.productDao().insert(new Product(name, imageUri));
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(() ->
+                        Toast.makeText(getContext(), R.string.AddProduct_Success, Toast.LENGTH_SHORT).show()
+                );
             }
         }).start();
     }

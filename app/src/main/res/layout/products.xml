@@ -6,28 +6,6 @@
     android:layout_height="match_parent"
     android:background="#FAFAF5">
 
-    <ImageView
-        android:id="@+id/ProductView1"
-        android:layout_width="116dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Product_FilterFind_Text"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/Product_Find_Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/Product_Find_Text"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Product_Find_Input" />
-
     <TextView
         android:id="@+id/Protuct_Text"
         android:layout_width="wrap_content"
@@ -44,16 +22,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/Product_Find_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Product_Find_Text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Product_Find_Input" />
+
     <EditText
         android:id="@+id/Product_Find_Input"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/Product_Find_Text"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintEnd_toStartOf="@+id/Find_Product_Button"
         app:layout_constraintStart_toEndOf="@+id/Product_Find_Text"
         app:layout_constraintTop_toBottomOf="@+id/Protuct_Text" />
@@ -75,173 +65,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="24dp"
         android:text="@string/Product_FilterFind_Text"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/Product_FilterFind_Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Product_Find_Text" />
+        app:layout_constraintTop_toBottomOf="@+id/Product_Find_Input" />
 
     <Button
         android:id="@+id/Product_FilterFind_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
         android:backgroundTint="#D97706"
         android:text="@string/Product_FilterFind_Button_Text"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintBottom_toBottomOf="@+id/Product_FilterFind_Text"
         app:layout_constraintStart_toEndOf="@+id/Product_FilterFind_Text"
-        app:layout_constraintTop_toBottomOf="@+id/Product_Find_Input" />
+        app:layout_constraintTop_toTopOf="@+id/Product_FilterFind_Text" />
 
-    <ImageView
-        android:id="@+id/ProductView2"
-        android:layout_width="116dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/ProductView3"
-        app:layout_constraintStart_toEndOf="@+id/ProductView1"
-        app:layout_constraintTop_toBottomOf="@+id/Product_FilterFind_Text"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/ProductView3"
-        android:layout_width="116dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/Product_MainPage_Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Product_FilterFind_Text"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/ProductView4"
-        android:layout_width="116dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProductViewText1"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/ProductView5"
-        android:layout_width="116dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/ProductView6"
-        app:layout_constraintStart_toEndOf="@+id/ProductView4"
-        app:layout_constraintTop_toBottomOf="@+id/ProductViewText2"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/ProductView6"
-        android:layout_width="116dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProductViewText3"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/ProductViewText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/ProductViewText1"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProductView1" />
-
-    <TextView
-        android:id="@+id/ProductViewText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/ProductViewText2"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toStartOf="@+id/ProductViewText3"
-        app:layout_constraintStart_toEndOf="@+id/ProductViewText1"
-        app:layout_constraintTop_toBottomOf="@+id/ProductView2" />
-
-    <TextView
-        android:id="@+id/ProductViewText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/ProductViewText3"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProductView3" />
-
-    <TextView
-        android:id="@+id/ProductViewText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/ProductViewText4"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProductView4" />
-
-    <TextView
-        android:id="@+id/ProductViewText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/ProductViewText5"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toStartOf="@+id/ProductViewText6"
-        app:layout_constraintStart_toEndOf="@+id/ProductViewText4"
-        app:layout_constraintTop_toBottomOf="@+id/ProductView5" />
-
-    <TextView
-        android:id="@+id/ProductViewText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/ProductViewText6"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ProductView6" />
+        app:layout_constraintTop_toBottomOf="@+id/Product_FilterFind_Text" />
 
     <Button
         android:id="@+id/Product_MainPage_Button"
-        android:layout_width="388dp"
+        android:layout_width="0dp"
         android:layout_height="62dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#D97706"
         android:text="@string/Product_MainPage_Button_Text"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
