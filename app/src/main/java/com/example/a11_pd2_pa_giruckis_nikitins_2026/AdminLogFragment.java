@@ -66,6 +66,7 @@ public class AdminLogFragment extends Fragment {
         );
 
         binding.AdminAddProductButton.setOnClickListener(v -> showAddProductDialog());
+        binding.AdminDeleteProductButton.setOnClickListener(v -> showDeleteProductDialog());
 
         binding.AdminUserList.setOnItemClickListener((parent, view1, position, id) -> {
             if (position < userList.size()) {
@@ -179,6 +180,58 @@ public class AdminLogFragment extends Fragment {
             if (getActivity() != null) {
                 getActivity().runOnUiThread(() ->
                         Toast.makeText(getContext(), R.string.AddProduct_Success, Toast.LENGTH_SHORT).show()
+                );
+            }
+        }).start();
+    }
+
+    private void showDeleteProductDialog() {
+        if (getContext() == null) return;
+        AppDatabase db = AppDatabase.getDatabase(getContext());
+        new Thread(() -> {
+            List<Product> products = db.productDao().getAllProducts();
+            if (getActivity() == null) return;
+            getActivity().runOnUiThread(() -> {
+                if (products.isEmpty()) {
+                    Toast.makeText(getContext(), R.string.DeleteProduct_Empty, Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                String[] productNames = new String[products.size()];
+                for (int i = 0; i < products.size(); i++) {
+                    productNames[i] = products.get(i).name;
+                }
+
+                new AlertDialog.Builder(requireContext())
+                        .setTitle(R.string.DeleteProduct_Title)
+                        .setItems(productNames, (dialog, which) -> {
+                            Product selectedProduct = products.get(which);
+                            confirmDeleteProduct(selectedProduct);
+                        })
+                        .setNegativeButton(android.R.string.cancel, null)
+                        .show();
+            });
+        }).start();
+    }
+
+    private void confirmDeleteProduct(Product product) {
+        if (getContext() == null) return;
+        String message = String.format(getString(R.string.DeleteProduct_Confirm), product.name);
+        new AlertDialog.Builder(requireContext())
+                .setTitle(R.string.AdminLog_DeleteProduct)
+                .setMessage(message)
+                .setPositiveButton("Dzēst", (dialog, which) -> deleteProduct(product))
+                .setNegativeButton("Atcelt", null)
+                .show();
+    }
+
+    private void deleteProduct(Product product) {
+        AppDatabase db = AppDatabase.getDatabase(getContext());
+        new Thread(() -> {
+            db.productDao().delete(product);
+            if (getActivity() != null) {
+                getActivity().runOnUiThread(() ->
+                        Toast.makeText(getContext(), R.string.DeleteProduct_Success, Toast.LENGTH_SHORT).show()
                 );
             }
         }).start();

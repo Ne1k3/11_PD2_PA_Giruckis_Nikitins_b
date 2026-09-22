@@ -50,6 +50,12 @@
     <string name="AddProduct_AddButton">Pievienot</string>
     <string name="AddProduct_Success">Produkts veiksmīgi pievienots!</string>
 
+    <string name="AdminLog_DeleteProduct">Dzēst produktus</string>
+    <string name="DeleteProduct_Title">Izvēlieties produktu dzēšanai</string>
+    <string name="DeleteProduct_Confirm">Vai tiešām vēlaties dzēst produktu "%s"?</string>
+    <string name="DeleteProduct_Success">Produkts veiksmīgi izdzēsts!</string>
+    <string name="DeleteProduct_Empty">Nav pievienotu produktu, ko dzēst.</string>
+
     <string name="Registration_Text">Reģestretracija</string>
     <string name="Registration_Name">Vards</string>
     <string name="Registration_Surname">Uzvards</string>
