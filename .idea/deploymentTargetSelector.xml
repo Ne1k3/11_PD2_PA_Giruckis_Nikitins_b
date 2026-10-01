@@ -4,14 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DialogSelection />
-      </SelectionState>
-      <SelectionState runConfigName="FunctionTest">
-        <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-09-24T11:31:01.192623Z">
+        <DropdownSelection timestamp="2026-09-17T13:13:26.085706400Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\olegs\.android\avd\Medium_Phone.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\roman\.android\avd\Pixel_4.avd" />
             </handle>
           </Target>
         </DropdownSelection>
@@ -19,25 +15,21 @@
       </SelectionState>
       <SelectionState runConfigName="testDatabase()">
         <option name="selectionMode" value="DROPDOWN" />
-        <DialogSelection />
-      </SelectionState>
-      <SelectionState runConfigName="registrationAndLogin_workCorrectly()">
-        <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-09-24T11:31:01.192623Z">
+        <DropdownSelection timestamp="2026-09-17T13:13:26.085706400Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\olegs\.android\avd\Medium_Phone.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\roman\.android\avd\Pixel_4.avd" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="productOperations_workCorrectly()">
+      <SelectionState runConfigName="FunctionTest">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-09-24T11:31:01.192623Z">
+        <DropdownSelection timestamp="2026-09-17T13:13:26.085706400Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\olegs\.android\avd\Medium_Phone.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\roman\.android\avd\Pixel_4.avd" />
             </handle>
           </Target>
         </DropdownSelection>
@@ -45,10 +37,10 @@
       </SelectionState>
       <SelectionState runConfigName="userUpdateAndDelete_workCorrectly()">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-09-24T11:31:01.192623Z">
+        <DropdownSelection timestamp="2026-09-17T13:13:26.085706400Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\olegs\.android\avd\Medium_Phone.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\roman\.android\avd\Pixel_4.avd" />
             </handle>
           </Target>
         </DropdownSelection>

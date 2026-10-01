@@ -67,12 +67,16 @@ public class ProductFragment extends Fragment {
         AppDatabase db = AppDatabase.getDatabase(getContext());
         new Thread(() -> {
             List<Product> products = db.productDao().getAllProducts();
-            if (products.isEmpty()) {
-                // Seed initial sample products if DB is empty
-                for (int i = 1; i <= 6; i++) {
-                    Product sample = new Product("Produkt " + i, "");
-                    db.productDao().insert(sample);
+
+            // Удаляем автоматически созданные ранее тестовые продукты "Produkt 1"..."Produkt 6"
+            boolean cleaned = false;
+            for (Product p : new ArrayList<>(products)) {
+                if (p.name != null && p.name.matches("Produkt [1-6]") && (p.imageUri == null || p.imageUri.isEmpty())) {
+                    db.productDao().delete(p);
+                    cleaned = true;
                 }
+            }
+            if (cleaned) {
                 products = db.productDao().getAllProducts();
             }
 

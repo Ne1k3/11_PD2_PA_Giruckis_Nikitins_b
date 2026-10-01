@@ -10,6 +10,7 @@
                 <map>
                   <entry key="Duration" value="90" />
                   <entry key="Google Pixel 10" value="120" />
+                  <entry key="Pixel_4" value="120" />
                   <entry key="Tests" value="360" />
                 </map>
               </option>
@@ -36,6 +37,7 @@
                 <map>
                   <entry key="Duration" value="90" />
                   <entry key="Google Pixel 10" value="120" />
+                  <entry key="Pixel_4" value="120" />
                   <entry key="Tests" value="360" />
                 </map>
               </option>
@@ -63,6 +65,7 @@
                   <entry key="Duration" value="90" />
                   <entry key="Google Pixel 10" value="120" />
                   <entry key="Medium_Phone" value="120" />
+                  <entry key="Pixel_4" value="120" />
                   <entry key="Tests" value="360" />
                 </map>
               </option>
