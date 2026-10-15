@@ -45,6 +45,16 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
     <ImageView
+        android:id="@+id/ListCross1"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_red_cross"
+        app:layout_constraintEnd_toEndOf="@+id/ListView1"
+        app:layout_constraintTop_toTopOf="@+id/ListView1" />
+
+    <ImageView
         android:id="@+id/ListView2"
         android:layout_width="116dp"
         android:layout_height="117dp"
@@ -57,6 +67,16 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
     <ImageView
+        android:id="@+id/ListCross2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_red_cross"
+        app:layout_constraintEnd_toEndOf="@+id/ListView2"
+        app:layout_constraintTop_toTopOf="@+id/ListView2" />
+
+    <ImageView
         android:id="@+id/ListView3"
         android:layout_width="116dp"
         android:layout_height="117dp"
@@ -67,6 +87,16 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
     <ImageView
+        android:id="@+id/ListCross3"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_red_cross"
+        app:layout_constraintEnd_toEndOf="@+id/ListView3"
+        app:layout_constraintTop_toTopOf="@+id/ListView3" />
+
+    <ImageView
         android:id="@+id/ListView4"
         android:layout_width="116dp"
         android:layout_height="117dp"
@@ -75,6 +105,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ListTextView1"
         tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+    <ImageView
+        android:id="@+id/ListCross4"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_red_cross"
+        app:layout_constraintEnd_toEndOf="@+id/ListView4"
+        app:layout_constraintTop_toTopOf="@+id/ListView4" />
 
     <ImageView
         android:id="@+id/ListView5"
@@ -90,6 +130,16 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
 
     <ImageView
+        android:id="@+id/ListCross5"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_red_cross"
+        app:layout_constraintEnd_toEndOf="@+id/ListView5"
+        app:layout_constraintTop_toTopOf="@+id/ListView5" />
+
+    <ImageView
         android:id="@+id/ListView6"
         android:layout_width="116dp"
         android:layout_height="117dp"
@@ -98,6 +148,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ListTextView3"
         tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+    <ImageView
+        android:id="@+id/ListCross6"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_red_cross"
+        app:layout_constraintEnd_toEndOf="@+id/ListView6"
+        app:layout_constraintTop_toTopOf="@+id/ListView6" />
 
     <TextView
         android:id="@+id/ListTextView1"

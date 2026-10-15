@@ -72,6 +72,11 @@
     <string name="main_page_button4">Saraksts</string>
     <string name="main_page_button5">Izveidot jaunu sarakstu</string>
     <string name="main_page_button6">Ok</string>
+    <string name="main_page_button_add_product">Pievienot produktu sarakstam</string>
+    <string name="create_list_dialog_title">Ievadiet saraksta nosaukumu</string>
+    <string name="create_list_dialog_positive">Izveidot</string>
+    <string name="create_list_dialog_negative">Neizveidot</string>
+    <string name="create_list_success">Tika izveidots jauns saraksts!</string>
     <string name="main_page_text">Sakuma lapa</string>
     <string name="main_page_text2">Meklet sarakstu</string>
     <string name="main_page_search">0</string>

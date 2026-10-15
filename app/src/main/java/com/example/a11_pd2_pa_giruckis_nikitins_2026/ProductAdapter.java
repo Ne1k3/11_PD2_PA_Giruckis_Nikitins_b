@@ -15,7 +15,16 @@ import java.util.List;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
 
+    public interface OnProductClickListener {
+        void onProductClick(Product product);
+    }
+
     private List<Product> productList = new ArrayList<>();
+    private OnProductClickListener listener;
+
+    public void setOnProductClickListener(OnProductClickListener listener) {
+        this.listener = listener;
+    }
 
     public void setProducts(List<Product> products) {
         this.productList = products;
@@ -44,6 +53,12 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         } else {
             holder.productImage.setImageResource(R.drawable.ic_launcher_foreground);
         }
+
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onProductClick(product);
+            }
+        });
     }
 
     @Override
